@@ -1057,7 +1057,6 @@
       "attributes": [
         { "name": "axis", "type": "int32", "default": 0 },
         { "name": "is_onnx", "type": "boolean", "default": false }
-
       ]
     }
   },
@@ -1080,9 +1079,47 @@
     }
   },
   {
+    "name": "L2Pool",
+    "schema": {
+      "category": "Layer"
+    }
+  },
+  {
+    "name": "LogSoftmax",
+    "schema": {
+      "category": "Layer"
+    }
+  },
+  {
+    "name": "Relu1",
+    "schema": {
+      "category": "Layer"
+    }
+  },
+  {
+    "name": "L2Normalization",
+    "schema": {
+      "category": "Layer"
+    }
+  },
+  {
+    "name": "PackModel",
+    "schema": {
+      "category": "Layer",
+      "attributes": [
+        { "name": "buffer size", "type": "int32", "default": 1 }
+      ],
+      "inputs": [
+        { "name": "input" },
+        { "name": "Source Model" }
+      ]
+    }
+  },
+  {
     "name": "Num",
     "schema": {
       "category": "Layer"
     }
   }
+
 ]
