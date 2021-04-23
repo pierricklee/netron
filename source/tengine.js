@@ -625,7 +625,7 @@ tengine.ModelFileReader = class {
         register(96, 0, 'Tile', ['i','i']);
         register(97, 0, 'Mish', []);
         register(98, 0, 'L2Pool', []);
-        register(99, 0, 'LogSoftmax', []);
+        register(99, 0, 'LogSoftmax', ['i']);
         register(100, 0, 'ReLU1', []);
         register(101, 0, 'L2Normalization', []);
         register(102, 0, 'PackModel', ['i','i']);

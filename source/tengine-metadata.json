@@ -220,18 +220,16 @@
   },
   {
     "name": "Reshape",
-    "schema": {
-      "category": "Shape",
-      "attributes": [
-        { "name": "is_mxnet", "type": "int32", "default": 0 },
-        { "name": "reverse", "type": "int32", "default": 0 },
-        { "name": "shape", "type": "int32[]", "default": [] }
+    "category": "Shape",
+    "attributes": [
+      { "name": "is_mxnet", "type": "int32", "default": 0 },
+      { "name": "reverse", "type": "int32", "default": 0 },
+      { "name": "shape", "type": "int32[]", "default": [] }
       ],
-      "inputs": [
-        { "name": "input" },
-        { "name": "shape" }
-      ]
-    }
+    "inputs": [
+      { "name": "input" },
+      { "name": "shape" }
+    ]
   },
   {
     "name": "DropOut",
@@ -883,13 +881,11 @@
   },
   {
     "name": "Scatter",
-    "schema": {
-      "category": "Layer",
-      "attributes": [
-        { "name": "axis", "type": "int32", "default": 0 },
-        { "name": "is_onnx", "type": "boolean", "default": false }
-      ]
-    }
+    "category": "Layer",
+    "attributes": [
+      { "name": "axis", "type": "int32", "default": 0 },
+      { "name": "is_onnx", "type": "boolean", "default": false }
+    ]
   },
   {
     "name": "Unsqueeze",
@@ -911,41 +907,34 @@
   },
   {
     "name": "L2Pool",
-    "schema": {
-      "category": "Layer"
-    }
+    "category": "Layer"
   },
   {
     "name": "LogSoftmax",
-    "schema": {
-      "category": "Layer"
-    }
+    "category": "Layer",
+    "attributes": [
+      { "name": "axis", "type": "float32", "default": 0 }
+    ]
   },
   {
     "name": "Relu1",
-    "schema": {
-      "category": "Layer"
-    }
+    "category": "Layer"
   },
   {
     "name": "L2Normalization",
-    "schema": {
-      "category": "Layer"
-    }
+    "category": "Layer"
   },
   {
     "name": "PackModel",
-    "schema": {
-      "category": "Layer",
-      "attributes": [
-        { "name": "buffer size", "type": "int32", "default": 1 },
-        { "name": "model version", "type": "int32", "default": 1 }
-      ],
-      "inputs": [
-        { "name": "input" },
-        { "name": "Source Model" }
-      ]
-    }
+    "category": "Layer",
+    "attributes": [
+      { "name": "buffer size", "type": "int32", "default": 1 },
+      { "name": "model version", "type": "int32", "default": 1 }
+    ],
+    "inputs": [
+      { "name": "input" },
+      { "name": "Source Model" }
+    ]
   },
   {
     "name": "ZerosLike",
@@ -953,8 +942,6 @@
   },
   {
     "name": "Num",
-    "schema": {
-      "category": "Layer"
-    }
+    "category": "Layer"
   }
 ]
